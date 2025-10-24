@@ -1,66 +1,49 @@
 # Image-Classification
 
-Image Classification 🖼️
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Machine Learning](https://img.shields.io/badge/ML-NaiveBayes%20%7C%20SVM%20%7C%20RandomForest-orange.svg)](https://scikit-learn.org/stable/)
+[![Dataset](https://img.shields.io/badge/Dataset-Email%20%26%20SMS-red.svg)](https://www.kaggle.com/datasets)
+[![Web App](https://img.shields.io/badge/Web%20App-Streamlit-red.svg)](https://streamlit.io/)
+[![Testing](https://img.shields.io/badge/Testing-pytest-green.svg)](https://pytest.org/)
 
+An **image classification system** leveraging Convolutional Neural Networks (CNN) built with Keras and TensorFlow. Features a Flask web interface for uploading images and predicting their categories in real-time.
 
+## 🏆 Project Achievements
+### 🎯 Core Model Performance
 
+* **High Accuracy**: Efficient CNN model trained for image recognition
+* **Real-time Prediction**: Instant classification of uploaded images
+* **Modular Code**: Easy to extend or retrain on new datasets
+* **Production Ready**: Flask web application with error handling
 
+### 🌐 Web Application
 
+* **Interactive UI**: Upload images and view predictions
+* **Real-time Feedback**: Shows predicted class instantly
+* **User-friendly**: Simple and intuitive layout
 
+### 🧠 Model & Pipeline
 
+* **Architecture**: CNN with Keras
+* **Preprocessing**: Image resizing, normalization
+* **Prediction**: Softmax probabilities for classification
+* **Persistence**: Pretrained model saved as model.keras
 
+### 🧪 Testing & Validation
 
+* **Automated Testing**: pytest framework available for function testing
+* **Error Handling**: Handles invalid image formats and empty uploads
 
+### 🎯 Project Goals
 
+* **Image Classification System**: Classify images into predefined categories
+* **High Accuracy**: Minimize misclassifications
+* **Web-based Interface**: Provide easy-to-use Flask web app
+* **Extensible Pipeline**: Easy to add new categories or datasets
 
-An image classification system leveraging Convolutional Neural Networks (CNN) built with Keras and TensorFlow. Features a Flask web interface for uploading images and predicting their categories in real-time.
-
-🏆 Project Achievements
-🎯 Core Model Performance
-
-High Accuracy: Efficient CNN model trained for image recognition
-
-Real-time Prediction: Instant classification of uploaded images
-
-Modular Code: Easy to extend or retrain on new datasets
-
-Production Ready: Flask web application with error handling
-
-🌐 Web Application
-
-Interactive UI: Upload images and view predictions
-
-Real-time Feedback: Shows predicted class instantly
-
-User-friendly: Simple and intuitive layout
-
-🧠 Model & Pipeline
-
-Architecture: CNN with Keras
-
-Preprocessing: Image resizing, normalization
-
-Prediction: Softmax probabilities for classification
-
-Persistence: Pretrained model saved as model.keras
-
-🧪 Testing & Validation
-
-Automated Testing: pytest framework available for function testing
-
-Error Handling: Handles invalid image formats and empty uploads
-
-🎯 Project Goals
-
-Image Classification System: Classify images into predefined categories
-
-High Accuracy: Minimize misclassifications
-
-Web-based Interface: Provide easy-to-use Flask web app
-
-Extensible Pipeline: Easy to add new categories or datasets
-
-🛠️ Project Structure
+## 🛠️ Project Structure
+```
 Image-Classification/
 ├── 📁 templates/                 # HTML templates
 │   └── index.html                # Image upload page
@@ -70,36 +53,35 @@ Image-Classification/
 ├── requirements.txt              # Python dependencies
 ├── README.md                     # Project documentation
 └── .gitignore                    # Git ignore configuration
+```
 
-🔄 Methodology
-Preprocessing
+### 🔄 Methodology
+1. **Preprocessing**
 
-Resize images to model input shape
+   * Resize images to model input shape
+   * Normalize pixel values (0-1)
+   * Convert images to array for prediction
 
-Normalize pixel values (0-1)
+2. **Model**
 
-Convert images to array for prediction
+   * Convolutional Neural Network (CNN)
+   * Trained using TensorFlow/Keras
+   * Softmax activation for multi-class classification
 
-Model
+3. **Prediction**
 
-Convolutional Neural Network (CNN)
+   * User uploads an image via Flask app
+   * Model predicts the class and returns it in real-time
 
-Trained using TensorFlow/Keras
-
-Softmax activation for multi-class classification
-
-Prediction
-
-User uploads an image via Flask app
-
-Model predicts the class and returns it in real-time
-
-🚀 Quick Start Guide
-1️⃣ Clone the repository
+## 🚀 Quick Start Guide
+### 1️⃣ Clone the repository
+```bash
 git clone https://github.com/tarunkarimi/Image-Classification.git
 cd Image-Classification
+```
 
-2️⃣ Create and activate virtual environment
+### 2️⃣ Create and activate virtual environment
+``` bash
 # Windows
 python -m venv venv
 venv\Scripts\activate
@@ -107,61 +89,82 @@ venv\Scripts\activate
 # Linux / Mac
 python3 -m venv venv
 source venv/bin/activate
+```
 
-3️⃣ Install dependencies
+### 3️⃣ Install dependencies
+``` bash
 pip install -r requirements.txt
+```
 
-4️⃣ Run Flask Web App 🌐
-python app.py
-
-
+### 4️⃣ Run Flask Web App 🌐
+```bash
+streamlit run app.py
+```
 Open http://127.0.0.1:5000/ in your browser to upload images and see predictions.
 
-🧪 Testing
-pytest tests/ -v
+### 🔧 Features
 
-🔧 Features
-
-Real-time image classification
-
-Easy retraining with new datasets
-
-Flask web interface for image uploads
-
+* Real-time image classification
+* Easy retraining with new datasets
+* Flask web interface for image uploads* 
 Modular code with preprocessing functions
 
-🔮 Future Enhancements
+###🔮 Future Enhancements
 
-Additional Architectures: ResNet, VGG, EfficientNet
+* Additional Architectures: ResNet, VGG, EfficientNet
+* Transfer Learning: Use pretrained models for faster training
+* Multi-class & Multi-label Support: Classify multiple categories
+* REST API Deployment: Serve predictions via API
+* Enhanced UI: Display top-k predictions and probability scores
 
-Transfer Learning: Use pretrained models for faster training
+## 🤝 Contributing & Community
 
-Multi-class & Multi-label Support: Classify multiple categories
+### 🌟 How to Contribute
 
-REST API Deployment: Serve predictions via API
+1. **Fork the repository**
 
-Enhanced UI: Display top-k predictions and probability scores
+```bash
+git clone https://github.com/tarunkarimi/Image-Classification.git
+```
 
-🤝 Contributing
+2. **Create a feature branch**
 
-Fork the repo
+```bash
+git checkout -b feature/awesome-feature
+```
 
-Create a new branch: git checkout -b feature/your-feature
+3. **Make changes and test**
 
-Make changes & test: pytest tests/
+```bash
+pytest tests/ -v
+```
 
-Commit & push: git commit -m "Add feature" & git push origin feature/your-feature
+4. **Commit & Push**
 
-Open a Pull Request
+```bash
+git commit -m 'Add awesome feature'
+git push origin feature/awesome-feature
+```
 
-📧 Contact
+5. **Open a Pull Request**
 
-Email: taruntejakarimi@gmail.com
+### 🐛 Bug Reports & Feature Requests
 
-LinkedIn: Tarun Teja Karimi
+* Use GitHub Issues with detailed steps, expected vs actual results, and screenshots if applicable
 
-GitHub: tarunkarimi
 
-🏆 Project Stats
+## 📧 Contact & Support
+
+* **Email**: [taruntejakarimi@gmail.com](mailto:taruntejakarimi@gmail.com)
+* **LinkedIn**: [Tarun Teja Karimi](https://www.linkedin.com/in/tarun-teja-karimi-689785214/)
+* **GitHub**: [tarunkarimi](https://github.com/tarunkarimi)
+
+## 🏆 Project Statistics
+
+![GitHub stars](https://img.shields.io/github/stars/tarunkarimi/Email-Sms-Spam-Classifier?style=social)
+![GitHub forks](https://img.shields.io/github/forks/tarunkarimi/Email-Sms-Spam-Classifier?style=social)
+![GitHub issues](https://img.shields.io/github/issues/tarunkarimi/Email-Sms-Spam-Classifier)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/tarunkarimi/Email-Sms-Spam-Classifier)
+![Last commit](https://img.shields.io/github/last-commit/tarunkarimi/Email-Sms-Spam-Classifier)
 
 
