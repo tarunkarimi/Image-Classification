@@ -2,3 +2,11 @@ tensorflow==2.20.0
 keras
 matplotlib
 numpy
+flask
+pandas
+opencv-python
+pillow
+matplotlib
+pytest
+streamlit
+plotly
