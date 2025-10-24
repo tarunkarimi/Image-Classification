@@ -55,6 +55,8 @@ Image-Classification/
 └── .gitignore                    # Git ignore configuration
 ```
 
+[![Dataset](https://img.shields.io/badge/Dataset-Dogs%20vs%20Cats-red.svg)](https://www.kaggle.com/c/dogs-vs-cats)
+
 ### 🔄 Methodology
 1. **Preprocessing**
 
