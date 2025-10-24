@@ -2,8 +2,8 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Machine Learning](https://img.shields.io/badge/ML-NaiveBayes%20%7C%20SVM%20%7C%20RandomForest-orange.svg)](https://scikit-learn.org/stable/)
-[![Dataset](https://img.shields.io/badge/Dataset-Email%20%26%20SMS-red.svg)](https://www.kaggle.com/datasets)
+[![Machine Learning](https://img.shields.io/badge/ML-CNN%20%7C%20DeepLearning-orange.svg)](https://www.tensorflow.org/)
+[![Dataset](https://img.shields.io/badge/Dataset-Custom%20Images-red.svg)](https://www.kaggle.com/)
 [![Web App](https://img.shields.io/badge/Web%20App-Streamlit-red.svg)](https://streamlit.io/)
 [![Testing](https://img.shields.io/badge/Testing-pytest-green.svg)](https://pytest.org/)
 
